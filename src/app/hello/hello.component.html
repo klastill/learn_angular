@@ -1,0 +1,3 @@
+<p>hello {{name}}!</p>
+<input type="text" placeholder="enter your name" #inputYourName>
+<button (click)="setName(inputYourName.value); inputYourName.value = ''">submit</button>
