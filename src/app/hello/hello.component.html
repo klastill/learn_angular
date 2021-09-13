@@ -3,7 +3,20 @@
 <button (click)="setName(inputYourName.value); inputYourName.value = ''">submit</button>
 <br />
 <br />
-<div style="height: 36px">
+<div style="height: 24px">
+  <!-- if -->
   <p *ngIf="isShow">Can you see this?</p>
 </div>
+<div style="height: 24px">
+    <!-- if-else -->
+    <p *ngIf="isShow; then thenBlock else elseBlock"></p>
+    <ng-template #thenBlock>Truthy</ng-template>
+    <ng-template #elseBlock>Falsy</ng-template>
+</div>
 <button (click)="isShow=!isShow">{{isShow? 'hide':'show'}}</button>
+<br />
+<br />
+<!-- For -->
+<ul>
+  <li *ngFor="let item of items">{{item.index + " : " + item.value}}</li>
+</ul>
