@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
   name: string = 'unknown';
+  isShow: boolean = true;
 
   setName(name: string) {
     this.name = name;

@@ -1,3 +1,9 @@
 <p>hello {{name}}!</p>
 <input type="text" placeholder="enter your name" #inputYourName>
 <button (click)="setName(inputYourName.value); inputYourName.value = ''">submit</button>
+<br />
+<br />
+<div style="height: 36px">
+  <p *ngIf="isShow">Can you see this?</p>
+</div>
+<button (click)="isShow=!isShow">{{isShow? 'hide':'show'}}</button>
