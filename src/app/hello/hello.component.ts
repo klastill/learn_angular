@@ -13,6 +13,7 @@ interface Item {
 export class HelloComponent implements OnInit {
   name: string = 'unknown';
   isShow: boolean = true;
+  cardCase: number = 0;
   items: Item[] = [
     {
       index: 1,
@@ -34,6 +35,10 @@ export class HelloComponent implements OnInit {
 
   setName(name: string) {
     this.name = name;
+  }
+
+  setCardCase(cardCase: number) {
+    this.cardCase = cardCase;
   }
 
   constructor() {

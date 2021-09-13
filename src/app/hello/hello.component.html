@@ -20,3 +20,15 @@
 <ul>
   <li *ngFor="let item of items">{{item.index + " : " + item.value}}</li>
 </ul>
+<br />
+<!-- Switch -->
+<div [ngSwitch]="cardCase" style="height: 24px">
+  <p *ngSwitchCase=0>Button A Clicked</p>
+  <p *ngSwitchCase=1>Button B Clicked</p>
+  <p *ngSwitchCase=2>Button C Clicked</p>
+  <p *ngSwitchCase=3>Button D Clicked</p>
+</div>
+<button (click)="setCardCase(0)">A</button>
+<button (click)="setCardCase(1)">B</button>
+<button (click)="setCardCase(2)">C</button>
+<button (click)="setCardCase(3)">D</button>
