@@ -14,6 +14,7 @@ export class HelloComponent implements OnInit {
   name: string = 'unknown';
   isShow: boolean = true;
   cardCase: number = 0;
+  money: number = 10000.1234;
   items: Item[] = [
     {
       index: 1,
