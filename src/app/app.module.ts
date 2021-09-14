@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ByeComponent } from './bye/bye.component';
 import { HelloChildComponent } from './hello-child/hello-child.component';
+import { NineAndFourThirdComponent } from './nine-and-four-third/nine-and-four-third.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     ByeComponent,
-    HelloChildComponent
+    HelloChildComponent,
+    NineAndFourThirdComponent
   ],
   imports: [
     BrowserModule,

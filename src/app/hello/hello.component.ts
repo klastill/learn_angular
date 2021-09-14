@@ -46,6 +46,7 @@ export class HelloComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.cardCase = 0;
   }
 
 }
