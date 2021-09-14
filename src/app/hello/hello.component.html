@@ -36,3 +36,5 @@
 <br />
 <!-- pipe -->
 <p>{{money | currency:'EUR' : true : "0.5-5"}}</p>
+<!-- data pass -->
+<hello-child *ngFor="let item of items" [item]="item" [name]="name"></hello-child>

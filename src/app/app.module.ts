@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ByeComponent } from './bye/bye.component';
+import { HelloChildComponent } from './hello-child/hello-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
-    ByeComponent
+    ByeComponent,
+    HelloChildComponent
   ],
   imports: [
     BrowserModule,
